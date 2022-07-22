@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Raleway';
     color: #000000;
 }
 
@@ -42,7 +42,14 @@ body{
     color: var(--paragraph-color);
 }
 
-.header-nav:hover,
+.active-nav{
+    color: var(--brand-color);
+}
+
+.header-nav:hover{
+    color: var(--brand-color);
+}
+
 .header-nav:focus{
     color: var(--brand-color);
 }
@@ -65,7 +72,7 @@ body{
     background-color: #2F303A;
 }
 
-.main h1{
+.main-title{
     color: #ffffff;
     font-weight: 900;
     font-size: 44px;
@@ -75,7 +82,7 @@ body{
     text-transform: uppercase;
 }
 
-.main button{
+.main-button{
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -85,7 +92,7 @@ body{
     background-color: var(--brand-color);
 }
 
-.options h2{
+.options-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -94,7 +101,7 @@ body{
     color: var(--paragraph-color);
 }
 
-.options ul li h3{
+.options-subtitle{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -103,14 +110,14 @@ body{
     color: var(--paragraph-color);
 }
 
-.options ul li p{
+.options-text{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--nav-gray);
 }
 
-.activities h2{
+.activities-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -123,7 +130,7 @@ body{
     background-color: #F5F4FA;
 }
 
-.team h2{
+.team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -132,18 +139,18 @@ body{
     color: var(--paragraph-color);
 }
 
-.team ul li h3{
+.team-subtitle{
     font-weight: 500;
     font-size: 16px;
-    line-height: 0.19;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
 }
 
-.team ul li p{
+.team-text{
     font-size: 16px;
-    line-height: 0.19;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--nav-gray);
@@ -154,6 +161,7 @@ body{
 }
 
 .contact-link{
+    font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -163,6 +171,7 @@ body{
 }
 
 .adress{
+    font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -170,18 +179,31 @@ body{
     text-decoration: none;
 }
 
-.button ul li button{
+.contact-link:hover,
+.contact-link:focus,
+.adress:hover,
+.adress:focus{
+    color: var(--brand-color);
+}
+
+.portfolio-button{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;    
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background-color: var(--brand-color);
+    color: #000000;
+    background-color: #F5F4FA;
     cursor: pointer;
 }
 
-.pictures ul li h3{
+.portfolio-button:hover,
+.portfolio-button:focus{
+    background-color: var(--brand-color);
+    color: #FFFFFF;
+}
+
+.pictures-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -189,10 +211,14 @@ body{
     color: #212121;
 }
 
-.pictures ul li p{
+.pictures-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--nav-gray);
+}
+
+.marker{
+    list-style-type: none;
 }
